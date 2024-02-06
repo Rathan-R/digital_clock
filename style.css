@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Italic";
+  src: url("digital-7.ttf");
+}
+
+body {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(46, 45, 45);
+  padding: 10px;
+  width: 400px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.time {
+  display: flex;
+  font-family: Italic;
+  font-size: 80px;
+  color: rgb(0, 159, 0);
+}
+.num {
+  width: 50px;
+  height: 100px;
+  position: relative;
+  text-align: right;
+}
+.num::before {
+  content: "0";
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: rgba(0, 159, 0, 0.2);
+}
+.day {
+  color: yellow;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.date {
+  font-family: Italic;
+  color: red;
+  font-size: 30px;
+}
+
+.timeLine {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+
+  color: rgba(125, 129, 125, 0.4);
+  align-items: center;
+  margin-top: 15px;
+}
+.timeLine span:nth-child(2) {
+  margin-top: 8px;
+}
+
+.active {
+  color: rgba(0, 159, 0, 1);
+}
